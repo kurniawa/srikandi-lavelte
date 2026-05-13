@@ -26,7 +26,8 @@ return new class extends Migration
             $table->string('slug')->unique();
             $table->string('annotation', 50)->nullable()->comment('Keterangan tambahan pada nama perhiasan, bisa ditulis di dalam kurung tertentu');
             $table->decimal('weight', 7, 2)->nullable();
-            $table->decimal('price', 15, 2);
+            $table->decimal('weight_price', 15, 2);
+            $table->decimal('total_price', 18, 2)->nullable();
             $table->string('unit', 20)->nullable();
             $table->string('status', 20)->default('ready'); // ['ready', 'on display', 'active', 'inactive', 'archived', 'sold', 'out of stock', 'buyback', 'sorted', 'cleaned']
             $table->unsignedSmallInteger('year')->nullable();

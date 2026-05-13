@@ -26,7 +26,7 @@ return new class extends Migration
             $table->decimal('carat', 8, 2)->nullable();
             $table->decimal('size', 8, 2)->nullable()->comment('ukuran dalam mm');
             $table->decimal('weight', 10, 3)->nullable()->comment('berat dalam gram');
-            $table->decimal('price_per_gram', 15, 2)->nullable();
+            $table->decimal('weight_price', 15, 2)->nullable();
             $table->decimal('total_price', 18, 2)->nullable();
             $table->string('codename', 20)->nullable()->unique();
             $table->string('description')->nullable();

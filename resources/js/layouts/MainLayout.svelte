@@ -57,7 +57,7 @@
     <main class="mt-1 bg-white w-full p-1">
         <!-- Tampilkan title jika ada  -->
         {#if title}
-            <h1 class="text-lg font-semibold mb-4 py-1 px-2 rounded shadow drop-shadow inline-block">{title}</h1>
+            <h1 class="text-lg text-yellow-600 font-bold mb-4 py-1 px-2 rounded shadow drop-shadow inline-block">{title}</h1>
         {/if}
         <!-- Slot ini akan diisi oleh konten dari halaman masing-masing -->
         <slot />
