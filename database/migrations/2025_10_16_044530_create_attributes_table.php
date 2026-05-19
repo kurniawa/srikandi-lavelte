@@ -17,6 +17,7 @@ return new class extends Migration
             $table->string('parent_slug')->nullable()->comment('Slug dari atribut induk untuk memudahkan pencarian nilai berdasarkan slug induk');
             $table->boolean('has_children')->default(false);
             $table->string('name');
+            $table->string('nama')->nullable()->comment('Nama alternatif untuk keperluan tampilan, jika berbeda dengan "name"');
             $table->string('slug')->unique();
             $table->string('data_type')->nullable()->comment('Tipe atribut, misalnya string, integer, decimal, boolean, date, dll');
             $table->boolean('is_filterable')->default(false)->comment('Menandakan apakah atribut ini dapat digunakan sebagai filter pada pencarian produk');
