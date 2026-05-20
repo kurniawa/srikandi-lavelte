@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Attribute;
+use App\Models\Brand;
 use App\Models\Category;
 use Illuminate\Http\Request;
 use Inertia\Inertia;
@@ -33,6 +34,8 @@ class ProductController extends Controller
         $gold_colors = $attributes->where('parent_slug', 'gold-color')->values()->toArray();
         $trays = $attributes->where('parent_slug', 'tray')->values()->toArray();
         $conditions = $attributes->where('parent_slug', 'condition')->values()->toArray();
+        $age_ranges = $attributes->where('parent_slug', 'age-range')->values()->toArray();
+        $brands = Brand::select('id', 'slug', 'name')->get()->toArray();
         return Inertia::render("Products/Create", [
             'category' => $category_name,
             'ornament_types' => $ornament_types,
@@ -40,6 +43,8 @@ class ProductController extends Controller
             'gold_colors' => $gold_colors,
             'trays' => $trays,
             'conditions' => $conditions,
+            'age_ranges' => $age_ranges,
+            'brands' => $brands,
         ]);
     }
 }

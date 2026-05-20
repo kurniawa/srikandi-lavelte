@@ -203,7 +203,7 @@
 
 <div class="grid grid-cols-12 gap-1 mt-1">
     <div class="col-span-2 grid gap-1">
-        <label for="weight">Berat :</label>
+        <label for="weight">Berat</label>
         <input
             type="text"
             id="weight"
@@ -215,7 +215,7 @@
         />
     </div>
     <div class="col-span-4 grid gap-1">
-        <label for="weight_price">Harga/g :</label>
+        <label for="weight_price">Harga/g</label>
         <input
             type="text"
             id="weight_price"
@@ -227,7 +227,7 @@
         />
     </div>
     <div class="col-span-6 grid gap-1">
-        <label for="total_price">Harga Total :</label>
+        <label for="total_price">Harga Total</label>
         <input
             type="text"
             id="total_price"

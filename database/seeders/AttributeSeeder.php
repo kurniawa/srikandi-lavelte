@@ -98,6 +98,11 @@ class AttributeSeeder extends Seeder
             ['parent_id' => 4, 'parent_slug' => 'condition', 'name' => '7', 'nama' => null, 'slug' => '7', 'data_type' => null, 'description' => 'Cacat Terlihat'],
             ['parent_id' => 4, 'parent_slug' => 'condition', 'name' => '6', 'nama' => null, 'slug' => '6', 'data_type' => null, 'description' => 'Jelas Ada Cacat'],
             ['parent_id' => 4, 'parent_slug' => 'condition', 'name' => '5', 'nama' => null, 'slug' => '5', 'data_type' => null, 'description' => 'Rusak'],
+            // Age Range
+            ['parent_id' => 5, 'parent_slug' => 'age-range', 'name' => 'infant', 'nama' => 'bayi', 'slug' => 'infant', 'data_type' => null, 'description' => null],
+            ['parent_id' => 5, 'parent_slug' => 'age-range', 'name' => 'child', 'nama' => 'anak', 'slug' => 'child', 'data_type' => null, 'description' => null],
+            ['parent_id' => 5, 'parent_slug' => 'age-range', 'name' => 'teen', 'nama' => 'remaja', 'slug' => 'teen', 'data_type' => null, 'description' => null],
+            ['parent_id' => 5, 'parent_slug' => 'age-range', 'name' => 'adult', 'nama' => 'dewasa', 'slug' => 'adult', 'data_type' => null, 'description' => null],
         ];
 
         \Illuminate\Support\Facades\DB::table('attributes')->insert($attributes);
